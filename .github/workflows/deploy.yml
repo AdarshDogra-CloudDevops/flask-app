@@ -38,6 +38,6 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
         run: |
-          aws ecs update-service --cluster flask-cluster- \
-            --service flask-service- \
+          aws ecs update-service --cluster flask-cluster \
+            --service flask-service \
             --force-new-deployment --region $AWS_REGION
